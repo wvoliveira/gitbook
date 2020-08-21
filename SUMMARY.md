@@ -10,4 +10,5 @@
   * [Módulo http.server](notes/python/modulo-http.server.md)
 * [Ansible](notes/ansible.md)
 * [Docker](notes/docker.md)
+* [Linux](notes/linux.md)
 
