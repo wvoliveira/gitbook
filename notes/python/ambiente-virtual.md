@@ -79,6 +79,7 @@ Caso queira testar outros gerenciadores de ambientes virtuais, segue:
 
 * [https://github.com/pyenv/pyenv](https://github.com/pyenv/pyenv)
 * [https://github.com/pypa/virtualenv](https://github.com/pypa/virtualenv)
+* [https://github.com/theacodes/nox](https://github.com/theacodes/nox)
 
 Todos tem seus prós e contras, basta você decidir se o que você está fazendo necessita da complexidade ou simplicidade das soluções.
 
