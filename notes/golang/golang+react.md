@@ -141,7 +141,11 @@ $ go build .
 
 Irá aparecer um arquivo executável com o nome do nosso projeto `gore`, com apenas 8M. Isso porque utilizamos o [mux](https://github.com/gorilla/mux) para facilitar nossa vida, se tivéssemos utilizado o [http](https://golang.org/pkg/net/http/) default do Golang ficaria menor ainda. Já imaginou as possibilidades? Podemos utilizar tecnologias modernas no front-end e unir com a rapidez, simplicidade e elegância do Golang.
 
-Enfim, não é só por isso. Eu sou péssimo em argumentar sobre tudo, mas talvez você acredite em mim nos próximos posts. Até a próxima.
+Enfim, não é só por isso. Eu sou péssimo em argumentar sobre tudo, mas talvez você acredite em mim nos próximos posts. 
+
+O conteúdo desse projeto pode ser encontrado aqui: [https://github.com/wvoliveira/gore](https://github.com/wvoliveira/gore).
+
+Até a próxima.
 
 
 
