@@ -11,5 +11,4 @@
 * [Ansible](notes/ansible.md)
 * [Docker](notes/docker.md)
 * [Linux](notes/linux.md)
-* [Linux](notes/linux-1.md)
 
