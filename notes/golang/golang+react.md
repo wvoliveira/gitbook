@@ -90,7 +90,7 @@ func main() {
 
 Resumindo: iremos exibir o conteúdo do nosso arquivo principal do app em React \(index.html\) em um endpoint no Golang \("/"\).
 
-Não execute esse código!Ainda temos que buildar o nosso projeto em React:
+Não execute esse código! Ainda temos que buildar o nosso projeto em React:
 
 ```text
 $ cd web
@@ -123,13 +123,11 @@ $ go run main.go
 Veja que ao executar pela primeira vez, ele irá baixar todas as dependências necessárias:
 
 ```text
-go: finding module for package github.com/markbates/pkger
-go: found github.com/markbates/pkger in github.com/markbates/pkger v0.17.0
 go: finding module for package github.com/gorilla/mux
 go: found github.com/gorilla/mux in github.com/gorilla/mux v1.8.0
 ```
 
- Por isso não instalamos o pkger e nem o mux antes. Mas é uma boa instalar as dependências antes, principalmente se você estiver utilizando o VSCode ou outro editor que tenha suporte ao auto-complete.
+Por isso não instalamos o mux antes. Mas é uma boa instalar as dependências antes, principalmente se você estiver utilizando o VSCode ou outro editor que tenha suporte ao auto-complete.
 
 Ao terminar de instalar as dependências, tente acessar o link: [http://localhost:3000/](http://localhost:3000/). Se aparecer a mesma tela quando iniciamos nosso projeto pelo npm, é que deu tudo certo.
 
