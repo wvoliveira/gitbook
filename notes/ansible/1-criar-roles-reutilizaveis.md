@@ -211,6 +211,13 @@ Depois eu continuo na criação e explicação da role Nginx🤤
 ## Referências
 
 * [https://docs.ansible.com/ansible/latest/user\_guide/playbooks\_reuse\_roles.html](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html)
+* [https://docs.ansible.com/ansible/latest/user\_guide/intro\_adhoc.html](https://docs.ansible.com/ansible/latest/user_guide/intro_adhoc.html)
+* [https://docs.ansible.com/ansible/latest/user\_guide/become.html](https://docs.ansible.com/ansible/latest/user_guide/become.html#using-become)
+* [https://docs.ansible.com/ansible/latest/user\_guide/playbooks\_intro.html](https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html)
+* [https://docs.ansible.com/ansible/latest/modules/template\_module.html](https://docs.ansible.com/ansible/latest/modules/template_module.html)
+* [https://docs.ansible.com/ansible/latest/modules/yum\_module.html](https://docs.ansible.com/ansible/latest/modules/yum_module.html)
+* [https://docs.ansible.com/ansible/latest/user\_guide/playbooks\_variables.html](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#playbooks-variables)
+* [https://docs.ansible.com/ansible/latest/user\_guide/playbooks\_reuse\_roles.html](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html)
 
 
 
