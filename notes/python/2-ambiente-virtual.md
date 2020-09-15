@@ -1,4 +1,4 @@
-# Ambiente virtual
+# 2. Ambiente virtual
 
 ## Essencial para qualquer projeto em Python
 

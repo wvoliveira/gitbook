@@ -2,7 +2,7 @@
 description: Altamente escalável + interfaces magníficas
 ---
 
-# Golang + React
+# 1. Golang + React
 
 Há um tempo atrás eu descobri o quão fácil é unir esses dois elementos sensacionais: [Golang](https://golang.org/) + [React](https://reactjs.org/). Então nesse post irei mostrar como você pode fazer em sua casa, no conforto do seu lar, tomando aquela coca-cola ou aquela colorado bem gelada ou qualquer coisa, água talvez?
 

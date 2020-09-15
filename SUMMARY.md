@@ -5,12 +5,13 @@
 ## Notes
 
 * [Python](notes/python/README.md)
-  * [Zen](notes/python/zen.md)
-  * [Ambiente virtual](notes/python/ambiente-virtual.md)
-  * [Módulo http.server](notes/python/modulo-http.server.md)
-* [Ansible](notes/ansible.md)
+  * [1. Zen](notes/python/1-zen.md)
+  * [2. Ambiente virtual](notes/python/2-ambiente-virtual.md)
+  * [3. Módulo http.server](notes/python/3-modulo-http.server.md)
+* [Ansible](notes/ansible/README.md)
+  * [1. Criar roles reutilizáveis](notes/ansible/1-criar-roles-reutilizaveis.md)
 * [Docker](notes/docker.md)
 * [Linux](notes/linux.md)
 * [Golang](notes/golang/README.md)
-  * [Golang + React](notes/golang/golang+react.md)
+  * [1. Golang + React](notes/golang/1-golang+react.md)
 

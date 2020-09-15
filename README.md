@@ -4,7 +4,7 @@ description: Irei adicionar tópicos sobre o que sei e o que estou aprendendo..
 
 # Bem vindo
 
-## Wellington Vieira de Oliveira
+## Curriculo
 
 * Tenho alguns anos de experiência com administração Linux;
 * Já fiz alguns projetos em Python, a maioria scripts de automação, mas valeu demais;
@@ -14,9 +14,9 @@ description: Irei adicionar tópicos sobre o que sei e o que estou aprendendo..
 * Procurando ajudar projetos open-source;
 * Sou fã da stack ELK e vi que o Splunk é uma ferramenta sensacional também;
 
-Meu currículo pode ser acessível por [aqui](https://docs.google.com/document/d/1wb9JjWqV4jpzZsHhP0oZPU3h0D5aHmMjAyD1AQaLOgk/edit).
+Os detalhes podem ser acessíveis por [aqui](https://docs.google.com/document/d/1wb9JjWqV4jpzZsHhP0oZPU3h0D5aHmMjAyD1AQaLOgk/edit).
 
-## Redes
+## Redes sociais
 
 * LinkedIn: [https://www.linkedin.com/in/wvoliveira](https://www.linkedin.com/in/wvoliveira/)
 * Github: [https://github.com/wvoliveira](https://github.com/wvoliveira)

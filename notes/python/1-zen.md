@@ -1,4 +1,4 @@
-# Zen
+# 1. Zen
 
 ## Princípios do design Python
 
