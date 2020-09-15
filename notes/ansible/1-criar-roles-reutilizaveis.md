@@ -202,7 +202,7 @@ Mostrando que o telnet já está instalado.
 
 ![](../../.gitbook/assets/giphy-magic.gif)
 
-Depois eu continuo na criação explicação da role Nginx. Cansei 🤤 
+Depois eu continuo na criação e explicação da role Nginx🤤 
 
 ## Role Nginx
 
