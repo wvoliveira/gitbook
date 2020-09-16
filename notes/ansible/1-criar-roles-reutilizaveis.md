@@ -206,6 +206,167 @@ Depois eu continuo na criação e explicação da role Nginx🤤
 
 ## Role Nginx
 
+Para criarmos a role para instalação e configuração do Nginx seguiremos a mesma lógica da role basic. Utilizaremos o ansible-galaxy para iniciarmos uma role do zero:
+
+```text
+ansible-galaxy role init nginx
+```
+
+A estrutura da role continua a mesma:
+
+```text
+.
+└── nginx
+    ├── README.md
+    ├── defaults
+    │   └── main.yml
+    ├── files
+    ├── handlers
+    │   └── main.yml
+    ├── meta
+    │   └── main.yml
+    ├── tasks
+    │   └── main.yml
+    ├── templates
+    ├── tests
+    │   ├── inventory
+    │   └── test.yml
+    └── vars
+        └── main.yml
+```
+
+Como comentei anteriormente, vamos seguir a simplicidade nas tarefas para dar enfâse a reutilização das roles. Então vamos criar as seguintes ações:
+
+1. Instalar o Nginx;
+2. Adicionar um novo arquivo index.html;
+3. Iniciar e habilitar o serviço do Nginx.
+
+Tente analisar o conteúdo abaixo, depois copie e cole no arquivo main.yml da pasta tasks:
+
+```text
+---
+- name: install nginx 
+  yum:
+    name: nginx
+    state: present
+
+- name: insert index.html
+  template:
+    src: index.html.j2
+    dest: /usr/share/nginx/html/index.html
+    owner: root
+    group: root
+    mode: '0777'
+  notify: restart service
+
+- name: start service
+  systemd:
+    name: nginx
+    state: started
+```
+
+Existem 3 tarefas conforme listamos no passo anterior. A maioria segue a mesma lógica da role basic, porém existe 1 ponto bem interessante: o notify. Ao executar a tarefa de inserir o index.html, se tiver alterações a serem feitas, ele irá reiniciar o serviço, chamando o handler "restart service".
+
+Vamos inserir o conteúdo do handler no arquivo main.yml na pasta handlers:
+
+```text
+---
+- name: restart service
+  systemd:
+    name: nginx
+    state: restarted
+```
+
+E não podemos nos esquecer do template. Arquivo index.html.j2 na pasta templates:
+
+```text
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Criado pelo Ansible</title>
+</head>
+
+<body>
+	<h1>Criado pelo Ansible</h1>
+</body>
+</html>
+```
+
+Agora vamos adicionar essa role no site.yml que criamos para invocar a role basic:
+
+```text
+---
+- hosts: all
+  become: yes
+  roles:
+    - basic
+    - nginx
+```
+
+E bora executar da mesma forma que executamos a role basic:
+
+```text
+ansible-playbook -i "18.223.170.162," site.yml -u cloud_user -kK
+```
+
+Se tudo der certo, o resultado da execução será esse:
+
+```text
+...
+TASK [install nginx] *************************************************************************************************************
+changed: [18.223.170.162]
+
+TASK [nginx : insert index.html] *************************************************************************************************
+changed: [18.223.170.162]
+
+TASK [nginx : start service] *****************************************************************************************************
+changed: [18.223.170.162]
+
+RUNNING HANDLER [nginx : restart service] ****************************************************************************************
+changed: [18.223.170.162]
+
+PLAY RECAP ***********************************************************************************************************************
+18.223.170.162             : ok=8    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0  
+```
+
+E para verificar se nossa instalação e configuração do Nginx funcionou, bora acessar a porta 80 e ver o que retorna:
+
+```text
+curl 18.223.170.162
+```
+
+Resultado:
+
+```text
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Criado pelo Ansible</title>
+</head>
+
+<body>
+	<h1>Criado pelo Ansible</h1>
+</body>
+</html>
+```
+
+![](../../.gitbook/assets/giphy-brain123.gif)
+
+Isso parece básico mas é muuuuito maneiro! 
+
+Por fim, realizamos as seguintes tarefas com as duas roles:
+
+1. Atualizamos os pacotes instalados no sistema operacional;
+2. Instalamos pacotes bem interessantes, como telnet e netcat;
+3. Alteramos o /etc/motd para quando entrarem no servidor saberem que ele é gerenciado pelo Ansible;
+4. Instalamos, configuramos e iniciamos o Nginx.
+
+Isso tudo pode ser reutilizado por outros projetos. Digamos que você queria só utilizar a parte da role basic ou somente a parte do Nginx.. Tudo é apartado.
+
+De novo: essas podem parecer tarefas básicas, porém são muito utilizadas em diversas roles em produção por aí.
+
+Espero que você tenha gostado.
+
 
 
 ## Referências
