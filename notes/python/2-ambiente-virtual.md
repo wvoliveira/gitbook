@@ -1,8 +1,8 @@
 # 2. Ambiente virtual
 
-## Essencial para qualquer projeto em Python
+## Essencial
 
-Ambiente virtual  é bem útil quando trabalhamos com aplicações, scripts ou até mesmo testar alguma solução. Ele funciona como um ambiente fechado onde você pode alterar, destruir sem comprometer o sistema.
+Ambiente virtual é bem útil quando trabalhamos com aplicações, scripts ou até mesmo testar alguma solução. Ele funciona como um ambiente fechado onde você pode alterar, destruir sem comprometer o sistema.
 
 O ambiente virtual cria uma cópia de todos os binários necessários para utilizar a linguagem. Com isso, temos os seguintes benefícios:
 
