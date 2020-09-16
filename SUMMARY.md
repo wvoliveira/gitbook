@@ -14,4 +14,5 @@
 * [Linux](notes/linux.md)
 * [Golang](notes/golang/README.md)
   * [1. Golang + React](notes/golang/1-golang+react.md)
+  * [2. Consumir API com Golang](notes/golang/2-consumir-api-com-golang.md)
 
